@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Mass Helper</title>
+  </head>
+  <body>
+
+<nav class="navbar navbar-dark" style="background-color: #00BCD4;">
+  <span class="navbar-brand mb-0 h1">Chloe's Mass Helper</span>
+</nav>
+
+<div class="mb-3 mt-3">
+
+<div class="container pr-0 pl-0 mb-3 mt-3" style="background-color:#CDDC39;">
+<div class="media">
+  <img class="align-self-center" src="img/IntroductoryRites.png" alt="Generic placeholder image">
+    <div id="IR1" class="media-body"  style="height:235px;width:100%;line-height:235px;text-align:center;display:inline-block" onclick="toggleInfo('IR1','IR2')">
+      <h1 style="display: inline-block;vertical-align: middle;line-height: normal;">1. Introductory Rites</h1>
+    </div>
+
+    <div id="IR2" class="media-body" style="height:235px;width:100%;display:none;">
+      <div class="media-body" style="height:50px;line-height:50px;display: inline-block;"  onclick="toggleInfo('IR2','IR1')">
+          <h4 class="mt-0 pl-4" style="display: inline-block;vertical-align: middle;line-height: normal;">1. Introductory Rites</h4>
+      </div>
+      <div>
+      <table style="height:180px;width:100%;font-size:20px;">
+         <tr style="background-color:rgba(255, 255, 255, 0.6);">
+           <td class="pl-3"><div class="checkbox" style="width:16px;height:16px;border:1px solid black;margin-top:3px;margin-top:3px;margin-right:3px;display: inline-block"></div> Entrance Song</td>
+           <td><div onClick=playMusic(this,"music/current/Gloria.mp3")><img src="img/music_icon.svg" style="height:24px">Hymn<img class="playIcon" src="img/play_icon.svg" style="height:24px;display:None;"></div></td>
+           <td><img src="img/stand_icon.svg" style="height:24px">STAND</td>
+         </tr>
+         <tr style="background-color:rgba(255, 255, 255, 0.4);">
+           <td class="pl-3"><div class="checkbox" style="width:16px;height:16px;border:1px solid black;margin-top:3px;margin-top:3px;margin-right:3px;display: inline-block"></div> Greeting</td>
+           <td></td>
+           <td><img src="img/stand_icon.svg" style="height:24px">STAND</td>
+         </tr>
+         <tr style="background-color:rgba(255, 255, 255, 0.6);">
+           <td class="pl-3"><div class="checkbox" style="width:16px;height:16px;border:1px solid black;margin-top:3px;margin-top:3px;margin-right:3px;display: inline-block"></div> Act of Penitence</td>
+           <td></td>
+           <td><img src="img/stand_icon.svg" style="height:24px">STAND</td>
+         </tr>
+         <tr style="background-color:rgba(255, 255, 255, 0.4);">
+           <td class="pl-3"><div class="checkbox" style="width:16px;height:16px;border:1px solid black;margin-top:3px;margin-top:3px;margin-right:3px;display: inline-block"></div> Gloria</td>
+           <td><div onClick=playMusic(this,"music/current/Gloria.mp3")><img src="img/music_icon.svg" style="height:24px">Gloria<img class="playIcon" src="img/play_icon.svg" style="height:24px;display:None;"></div></td>
+           <td><img src="img/stand_icon.svg" style="height:24px">STAND</td>
+         </tr>
+         <tr style="background-color:rgba(255, 255, 255, 0.6);">
+           <td class="pl-3"><div class="checkbox" style="width:16px;height:16px;border:1px solid black;margin-top:3px;margin-top:3px;margin-right:3px;display: inline-block"></div> Opening Prayer</td>
+           <td></td>
+           <td><img src="img/stand_icon.svg" style="height:24px">STAND</td>
+         </tr>
+      </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container pr-0 pl-0 mb-3" style="background-color:#FFC107;">
+<div class="media">
+  <img class="align-self-center" src="img/LiturgyOfTheWord.png" alt="Generic placeholder image">
+
+    <div id="LOTW1" class="media-body"  style="height:235px;width:100%;line-height:235px;text-align:center;display:inline-block" onclick="toggleInfo('LOTW1','LOTW2')">
+      <h1 style="display: inline-block;vertical-align: middle;line-height: normal;">2. Liturgy of the Word</h1>
+    </div>
+
+    <div id="LOTW2" class="media-body" style="height:235px;width:100%;display:none;">
+      <div class="media-body" style="height:50px;line-height:50px;display: inline-block;"  onclick="toggleInfo('LOTW2','LOTW1')">
+          <h4 class="mt-0 pl-4" style="display: inline-block;vertical-align: middle;line-height: normal;">2. Liturgy of the Word</h4>
+      </div>
+      <div>
+      <table style="height:180px;width:100%;font-size:20px;">
+         <tr style="background-color:rgba(255, 255, 255, 0.6);">
+           <td class="pl-3"><div class="checkbox" style="width:16px;height:16px;border:1px solid black;margin-top:3px;margin-top:3px;margin-right:3px;display: inline-block"></div> First Reading</td>
+           <td>Reading</td>
+           <td><img src="img/sit_icon2.png" style="height:24px">SIT</td>
+         </tr>
+         <tr style="background-color:rgba(255, 255, 255, 0.4);">
+           <td class="pl-3"><div class="checkbox" style="width:16px;height:16px;border:1px solid black;margin-top:3px;margin-top:3px;margin-right:3px;display: inline-block"></div> Responsal Psalm</td>
+           <td><div onClick=playMusic(this,"music/current/Gloria.mp3")><img src="img/music_icon.svg" style="height:24px">Hymn<img class="playIcon" src="img/play_icon.svg" style="height:24px;display:None;"></div></td>
+           <td><img src="img/sit_icon2.png" style="height:24px">SIT</td>
+         </tr>
+         <tr style="background-color:rgba(255, 255, 255, 0.6);">
+           <td class="pl-3"><div class="checkbox" style="width:16px;height:16px;border:1px solid black;margin-top:3px;margin-top:3px;margin-right:3px;display: inline-block"></div> Second Reading</td>
+           <td>Reading</td>
+           <td><img src="img/sit_icon2.png" style="height:24px">SIT</td>
+         </tr>
+         <tr style="background-color:rgba(255, 255, 255, 0.4);">
+           <td class="pl-3"><div class="checkbox" style="width:16px;height:16px;border:1px solid black;margin-top:3px;margin-top:3px;margin-right:3px;display: inline-block"></div> Gospel Acclamation</td>
+           <td><div onClick=playMusic(this,"music/current/Acclamation.mp3")><img src="img/music_icon.svg" style="height:24px">Acclamation<img class="playIcon" src="img/play_icon.svg" style="height:24px;display:None;"></div></td>
+           <td><img src="img/stand_icon.svg" style="height:24px">STAND</td>
+         </tr>
+         <tr style="background-color:rgba(255, 255, 255, 0.6);">
+           <td class="pl-3"><div class="checkbox" style="width:16px;height:16px;border:1px solid black;margin-top:3px;margin-top:3px;margin-right:3px;display: inline-block"></div> Gospel</td>
+           <td>Reading</td>
+           <td><img src="img/stand_icon.svg" style="height:24px">STAND</td>
+         </tr>
+         <tr style="background-color:rgba(255, 255, 255, 0.4);">
+           <td class="pl-3"><div class="checkbox" style="width:16px;height:16px;border:1px solid black;margin-top:3px;margin-top:3px;margin-right:3px;display: inline-block"></div> Homily</td>
+           <td></td>
+           <td><img src="img/sit_icon2.png" style="height:24px">SIT</td>
+         </tr>
+      </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="container pr-0 pl-0 mb-3" style="background-color:#00BCD4;">
+<div class="media">
+  <img class="align-self-center" src="img/LiturgyOfTheEucharist.png" alt="Generic placeholder image" style="left:0px;">
+    <div id="LOTE1" class="media-body"  style="height:235px;width:100%;line-height:235px;text-align:center;display:inline-block" onclick="toggleInfo('LOTE1','LOTE2')">
+      <h1 style="display: inline-block;vertical-align: middle;line-height: normal;">3. Liturgy of the Eucharist</h1>
+    </div>
+
+    <div id="LOTE2" class="media-body" style="height:235px;width:100%;display:none;">
+      <div class="media-body" style="height:50px;line-height:50px;display: inline-block;"  onclick="toggleInfo('LOTE2','LOTE1')">
+          <h4 class="mt-0 pl-4" style="display: inline-block;vertical-align: middle;line-height: normal;">3. Liturgy of the Eucharist</h4>
+      </div>
+      <div>
+      <table style="height:180px;width:100%;font-size:20px;">
+         <tr style="background-color:rgba(255, 255, 255, 0.6);">
+           <td class="pl-3"><div class="checkbox" style="width:16px;height:16px;border:1px solid black;margin-top:3px;margin-top:3px;margin-right:3px;display: inline-block"></div> Lord's Prayer</td>
+           <td><div onClick=playMusic(this,"music/current/Gloria.mp3")><img src="img/music_icon.svg" style="height:24px">Prayer<img class="playIcon" src="img/play_icon.svg" style="height:24px;display:None;"></div></td>
+           <td><img src="img/stand_icon.svg" style="height:24px">STAND</td>
+         </tr>
+         <tr style="background-color:rgba(255, 255, 255, 0.4);">
+           <td class="pl-3"><div class="checkbox" style="width:16px;height:16px;border:1px solid black;margin-top:3px;margin-top:3px;margin-right:3px;display: inline-block"></div> Sign of Peace</td>
+           <td>Peace</td>
+           <td><img src="img/stand_icon.svg" style="height:24px">STAND</td>
+         </tr>
+         <tr style="background-color:rgba(255, 255, 255, 0.6);">
+           <td class="pl-3"><div class="checkbox" style="width:16px;height:16px;border:1px solid black;margin-top:3px;margin-top:3px;margin-right:3px;display: inline-block"></div> Lamb of God</td>
+           <td>Prayer</td>
+           <td><img src="img/stand_icon.svg" style="height:24px">STAND</td>
+         </tr>
+         <tr style="background-color:rgba(255, 255, 255, 0.4);">
+           <td class="pl-3"><div class="checkbox" style="width:16px;height:16px;border:1px solid black;margin-top:3px;margin-top:3px;margin-right:3px;display: inline-block"></div> Communion</td>
+           <td><div onClick=playMusic(this,"music/current/Gloria.mp3")><img src="img/music_icon.svg" style="height:24px">Hymn<img class="playIcon" src="img/play_icon.svg" style="height:24px;display:None;"></div></td>
+           <td><img src="img/kneel_icon.png" style="height:24px">KNEEL</td>
+         </tr>
+         <tr style="background-color:rgba(255, 255, 255, 0.6);">
+           <td class="pl-3"><div class="checkbox" style="width:16px;height:16px;border:1px solid black;margin-top:3px;margin-top:3px;margin-right:3px;display: inline-block"></div>  Prayer</td>
+           <td></td>
+           <td><img src="img/kneel_icon.png" style="height:24px">KNEEL</td>
+         </tr>
+      </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container pr-0 pl-0 mb-3" style="background-color:#E91E63;">
+<div class="media">
+  <img class="align-self-center" src="img/ConcludingRite.png" alt="Generic placeholder image">
+    <div id="CR1" class="media-body"  style="height:235px;width:100%;line-height:235px;text-align:center;display:inline-block" onclick="toggleInfo('CR1','CR2')">
+      <h1 style="display: inline-block;vertical-align: middle;line-height: normal;color:#ffffff;">4. Concluding Rite</h1>
+    </div>
+
+    <div id="CR2" class="media-body" style="height:235px;width:100%;display:none;">
+      <div class="media-body" style="height:50px;line-height:50px;display: inline-block;"  onclick="toggleInfo('CR2','CR1')">
+          <h4 class="mt-0 pl-4" style="display: inline-block;vertical-align: middle;line-height: normal;color:#ffffff;">4. Concluding Rite</h4>
+      </div>
+      <div>
+      <table style="height:180px;width:100%;font-size:20px;">
+         <tr style="background-color:rgba(255, 255, 255, 0.6);">
+           <td class="pl-3"><div class="checkbox" style="width:16px;height:16px;border:1px solid black;margin-top:3px;margin-top:3px;margin-right:3px;display: inline-block"></div> Greeting and Blessing</td>
+           <td><div onClick=playMusic(this,"music/current/Gloria.mp3")><img src="img/music_icon.svg" style="height:24px">Hymn<img class="playIcon" src="img/play_icon.svg" style="height:24px;display:None;"></div></td>
+           <td><img src="img/stand_icon.svg" style="height:24px">STAND</td>
+         </tr>
+         <tr style="background-color:rgba(255, 255, 255, 0.4);">
+           <td class="pl-3"><div class="checkbox" style="width:16px;height:16px;border:1px solid black;margin-top:3px;margin-top:3px;margin-right:3px;display: inline-block"></div> Announcements</td>
+           <td></td>
+           <td><img src="img/sit_icon2.png" style="height:24px">SIT</td>
+         </tr>
+         <tr style="background-color:rgba(255, 255, 255, 0.6);">
+           <td class="pl-3"><div class="checkbox" style="width:16px;height:16px;border:1px solid black;margin-top:3px;margin-top:3px;margin-right:3px;display: inline-block"></div> Dismissal of Assembly</td>
+           <td>Sign of the Cross</td>
+           <td><img src="img/stand_icon.svg" style="height:24px">STAND</td>
+         </tr>
+         <tr style="background-color:rgba(255, 255, 255, 0.4);">
+           <td class="pl-3"><div class="checkbox" style="width:16px;height:16px;border:1px solid black;margin-top:3px;margin-top:3px;margin-right:3px;display: inline-block"></div> Recession Song</td>
+           <td><div onClick=playMusic(this,"music/current/Gloria.mp3")><img src="img/music_icon.svg" style="height:24px">Hymn<img class="playIcon" src="img/play_icon.svg" style="height:24px;display:None;"></div></td>
+           <td><img src="img/stand_icon.svg" style="height:24px">STAND</td>
+         </tr>
+
+      </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    function toggleInfo(offDiv,onDiv) {
+        document.getElementById(offDiv).style.display='None';
+        document.getElementById(onDiv).style.display='inline-block';
+    }
+
+
+    function playMusic(el,soundfile) {
+        var embed = document.getElementById("embed");
+        if (!embed) {
+            var embed = document.createElement("embed");
+                embed.id= "embed";
+                embed.setAttribute("src", soundfile);
+                embed.setAttribute("hidden", "true");
+            el.appendChild(embed);
+        } else {
+            embed.parentNode.removeChild(embed);
+        }
+        el.getElementsByClassName("playIcon")[0].style.display='inline-block';
+    }
+</script>
+  </body>
+</html>
