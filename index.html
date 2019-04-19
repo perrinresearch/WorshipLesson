@@ -300,18 +300,21 @@
             var td = document.createElement("td");
             var div = document.createElement("div");
             if(row["actionUrl"]){
-                div.onClick = function() {playMusic(this,row["actionUrl"])};
+                console.log(row["actionUrl"]);
+                div.onclick = function() {playMusic(this,row["actionUrl"])};
             }
             var img = document.createElement("img");
             img.src = row["actionIcon"];
             img.style = "height:24px"
-            td.appendChild(img);
+            div.appendChild(img);
             var label = document.createTextNode(row["actionLabel"]);
-            td.appendChild(label);
+            div.appendChild(label);
             var img = document.createElement("img");
+            img.className = "playIcon";
             img.src = "img/play_icon.svg";
             img.style = "height:24px;display:None;";
-            td.appendChild(img);
+            div.appendChild(img);
+            td.appendChild(div);
             tr.appendChild(td);
 
             // 3rd column: Stand/Sit/Kneel
