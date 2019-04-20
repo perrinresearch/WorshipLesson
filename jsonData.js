@@ -42,7 +42,7 @@ jsonData = {
         "row":[{
              "name": "First Reading",
              "actionLabel":"Reading",
-             "actionIcon":"",
+             "actionIcon":"img/book_icon.png",
              "stanceLabel":"SIT",
              "stanceIcon":"img/sit_icon2.png",
            },{
@@ -55,7 +55,7 @@ jsonData = {
            },{
              "name": "Second Reading",
              "actionLabel":"Reading",
-             "actionIcon":"",
+             "actionIcon":"img/book_icon.png",
              "stanceLabel":"SIT",
              "stanceIcon":"img/sit_icon2.png",
            },{
@@ -68,7 +68,7 @@ jsonData = {
            },{
              "name": "Gospel",
              "actionLabel":"Reading",
-             "actionIcon":"",
+             "actionIcon":"img/book_icon.png",
              "stanceLabel":"STAND",
              "stanceIcon":"img/stand_icon.svg",
            },{
@@ -77,41 +77,85 @@ jsonData = {
              "actionIcon":"",
              "stanceLabel":"SIT",
              "stanceIcon":"img/sit_icon2.png",
+           },{
+             "name": "Profession of Faith",
+             "actionLabel":"Prayer",
+             "actionIcon":"img/prayer_icon.svg",
+             "stanceLabel":"STAND",
+             "stanceIcon":"img/stand_icon.svg",
+           },{
+             "name": "General Intercession",
+             "actionLabel":"Prayer",
+             "actionIcon":"img/prayer_icon.svg",
+             "stanceLabel":"SIT",
+             "stanceIcon":"img/stand_icon.svg",
            }]
     },{
         "color":"#00BCD4",
         "image":"img/LiturgyOfTheEucharist.png",
         "title":"3. Liturgy of the Eucharist",
         "row":[{
+             "name": "Preparation of the Gifts",
+             "actionLabel":"Gifts",
+             "actionIcon":"img/gift_icon.svg",
+             "stanceLabel":"SIT",
+             "stanceIcon":"img/sit_icon2.png",
+           },{
+             "name": "Eucharistic Prayer",
+             "actionLabel":"Prayer",
+             "actionIcon":"img/prayer_icon.svg",
+             "stanceLabel":"STAND",
+             "stanceIcon":"img/stand_icon.svg",
+           },{
+             "name": "Holy, Holy, Holy",
+             "actionUrl":"music/current/Holy.mp3",
+             "actionLabel":"Holy, Holy, Holy",
+             "actionIcon":"img/music_icon.svg",
+             "stanceLabel":"STAND",
+             "stanceIcon":"img/stand_icon.svg",
+           },{
+             "name": "Memorial Acclamation",
+             "actionUrl":"music/current/Gloria.mp3",
+             "actionLabel":"Acclamation",
+             "actionIcon":"img/music_icon.svg",
+             "stanceLabel":"KNEEL",
+             "stanceIcon":"img/kneel_icon.png",
+           },{
+             "name": "Great Amen",
+             "actionUrl":"music/current/Gloria.mp3",
+             "actionLabel":"Great Amen",
+             "actionIcon":"img/music_icon.svg",
+             "stanceLabel":"KNEEL",
+             "stanceIcon":"img/kneel_icon.png",
+           },{
              "name": "Lord's Prayer",
              "actionUrl":"music/current/Gloria.mp3",
              "actionLabel":"Prayer",
-             "actionIcon":"img/music_icon.svg",
+             "actionIcon":"img/prayer_icon.svg",
              "stanceLabel":"STAND",
              "stanceIcon":"img/stand_icon.svg",
            },{
              "name": "Sign of Peace",
              "actionLabel":"Peace",
-             "actionIcon":"",
+             "actionIcon":"img/shake_icon.png",
              "stanceLabel":"STAND",
              "stanceIcon":"img/stand_icon.svg",
            },{
              "name": "Lamb of God",
              "actionLabel":"Prayer",
-             "actionIcon":"",
+             "actionIcon":"img/prayer_icon.svg",
              "stanceLabel":"STAND",
              "stanceIcon":"img/stand_icon.svg",
            },{
              "name": "Communion",
-             "actionUrl":"music/current/Gloria.mp3",
-             "actionLabel":"Hymn",
-             "actionIcon":"img/music_icon.svg",
+             "actionLabel":"Prayer",
+             "actionIcon":"img/prayer_icon.svg",
              "stanceLabel":"KNEEl",
              "stanceIcon":"img/kneel_icon.png",
            },{
-             "name": "Prayer",
-             "actionLabel":"",
-             "actionIcon":"",
+             "name": "Prayer After Communion",
+             "actionLabel":"Prayer",
+             "actionIcon":"img/prayer_icon.svg",
              "stanceLabel":"KNEEL",
              "stanceIcon":"img/kneel_icon.png",
            }]
@@ -120,18 +164,17 @@ jsonData = {
         "image":"img/ConcludingRite.png",
         "title":"4. Concluding Rite",
         "row":[{
-             "name": "Greeting and Blessing",
-             "actionUrl":"music/current/Gloria.mp3",
-             "actionLabel":"Hymn",
-             "actionIcon":"img/music_icon.svg",
-             "stanceLabel":"STAND",
-             "stanceIcon":"img/stand_icon.svg",
-           },{
              "name": "Announcements",
              "actionLabel":"",
              "actionIcon":"",
-             "stanceLabel":"SIT",
+             "stanceLabel":" SIT",
              "stanceIcon":"img/sit_icon2.png",
+           },{
+             "name": "Greeting and Blessing",
+             "actionLabel":"",
+             "actionIcon":"",
+             "stanceLabel":"STAND",
+             "stanceIcon":"img/stand_icon.svg",
            },{
              "name": "Dismissal of Assembly",
              "actionLabel":"Sign of the Cross",
@@ -139,7 +182,7 @@ jsonData = {
              "stanceLabel":"STAND",
              "stanceIcon":"img/stand_icon.svg",
            },{
-             "name": "Recession Song",
+             "name": "Recessional Hym",
              "actionUrl":"music/current/Gloria.mp3",
              "actionLabel":"Hymn",
              "actionIcon":"img/music_icon.svg",

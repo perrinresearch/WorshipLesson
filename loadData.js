@@ -11,7 +11,7 @@
         var media = document.createElement("div");
         media.className = "media";
         var mediaImg = document.createElement("img");
-        mediaImg.className = "align-self-center";
+        mediaImg.className = "align-self-start";
         mediaImg.src = sectionData["image"];
         mediaImg.alt = "Generic placeholder image"
         media.appendChild(mediaImg);
@@ -34,7 +34,7 @@
         var info2 = document.createElement("div");
         info2.id = secB;
         info2.className = "media-body";
-        info2.style = "height:235px;width:100%;display:none;";
+        info2.style = "min-height:235px;width:100%;display:none;";
         var info2header = document.createElement("div");
         info2header.className = "media-body";
         info2header.style = "height:50px;line-height:50px;display: inline-block;";
